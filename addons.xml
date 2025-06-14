@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+    <!-- First Plugin -->
+    <addon id="plugin.id1" name="Plugin One" version="1.0.0" provider-name="YourName">
+        <requires>
+            <import addon="xbmc.python" version="2.25.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Description of your first plugin</summary>
+            <description>Detailed description of your first plugin</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+
+    <!-- Second Plugin -->
+    <addon id="plugin.id2" name="Plugin Two" version="1.0.0" provider-name="YourName">
+        <requires>
+            <import addon="xbmc.python" version="2.25.0"/>
+        </requires>
+        <extension point="xbmc.python.pluginsource" library="default.py">
+            <provides>executable</provides>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Description of your second plugin</summary>
+            <description>Detailed description of your second plugin</description>
+            <platform>all</platform>
+        </extension>
+    </addon>
+</addons>
