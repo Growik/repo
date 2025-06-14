@@ -1,31 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-    <!-- First Plugin -->
-    <addon id="plugin.id1" name="Plugin One" version="1.0.0" provider-name="YourName">
+    <!-- Your Plugin -->
+    <addon id="plugin.lastlastlast" name="My First Plugin" version="1.0.0" provider-name="Growik">
         <requires>
-            <import addon="xbmc.python" version="2.25.0"/>
+            <import addon="xbmc.python" version="3.0.0"/>
         </requires>
-        <extension point="xbmc.python.pluginsource" library="default.py">
-            <provides>executable</provides>
+        <extension point="xbmc.python.pluginsource">
+            <library>default.py</library>
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>Description of your first plugin</summary>
-            <description>Detailed description of your first plugin</description>
+            <summary>My awesome first plugin</summary>
+            <description>Detailed description here</description>
             <platform>all</platform>
         </extension>
     </addon>
 
-    <!-- Second Plugin -->
-    <addon id="plugin.id2" name="Plugin Two" version="1.0.0" provider-name="YourName">
-        <requires>
-            <import addon="xbmc.python" version="2.25.0"/>
-        </requires>
-        <extension point="xbmc.python.pluginsource" library="default.py">
-            <provides>executable</provides>
+    <!-- Your Repository Add-on -->
+    <addon id="repository.growik" name="Growik Repository" version="1.0.0" provider-name="Growik">
+        <extension point="xbmc.addon.repository">
+            <info compressed="false">https://growik.github.io/repo/addons.xml</info>
+            <checksum>https://growik.github.io/repo/addons.xml.md5</checksum>
+            <datadir zip="true">https://growik.github.io/repo/plugins/</datadir>
         </extension>
         <extension point="xbmc.addon.metadata">
-            <summary>Description of your second plugin</summary>
-            <description>Detailed description of your second plugin</description>
+            <summary>Growik's Kodi Repository</summary>
             <platform>all</platform>
         </extension>
     </addon>
