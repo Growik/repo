@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.growik" name="Growik Repository" version="1.0.0" provider-name="Growik">
+    <extension point="xbmc.addon.repository" name="Growik Repository">
+        <info compressed="false">https://growik.github.io/repo/addons.xml</info>
+        <checksum>https://growik.github.io/repo/addons.xml.md5</checksum>
+        <datadir zip="true">https://growik.github.io/repo/plugins/</datadir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Growik's Kodi Add-on Repository</summary>
+        <platform>all</platform>
+    </extension>
+</addon>
